@@ -1,0 +1,25 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Product
+    password: 7677976
+    username: postgres
+
+  mvc:
+    servlet:
+      path: /api
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+jwt:
+  secretKey: SupperKey
+  expireTime: 864000000
+
+
+
